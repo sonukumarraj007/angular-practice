@@ -1,5 +1,11 @@
 <h3>custom-pipe</h3>
 
+<br>
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Search" [(ngModel)]='nameSearch'>
+</div>
+<br>
+
 <table class="table table-border">
     <thead>
         <tr>
@@ -11,7 +17,7 @@
             <th>Langulage</th>
         </tr>
     </thead>
-    <tbody *ngFor="let item of emp_list">
+    <tbody *ngFor="let item of emp_list | filter:nameSearch">
         <tr>
             <td scope="row">{{item.id}}</td>
             <td>{{item.name}}</td>

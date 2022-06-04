@@ -9,6 +9,8 @@ export class CustomPipeComponent implements OnInit {
 
   constructor() { }
 
+  nameSearch = ''
+
   emp_list = [
     { 
       'id': 1,

@@ -27,6 +27,7 @@ import { ReactiveFormComponent } from './example/reactive-form/reactive-form.com
 import { FormArrayComponent } from './example/form-array/form-array.component';
 import { ShortPipe } from './shared/pipe/short.pipe';
 import { FilterPipe } from './shared/pipe/filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { FilterPipe } from './shared/pipe/filter.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
