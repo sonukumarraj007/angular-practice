@@ -25,6 +25,8 @@ import { HttpClientComponent } from './example/http-client/http-client.component
 import { TepmleteDrivenFormComponent } from './example/tepmlete-driven-form/tepmlete-driven-form.component';
 import { ReactiveFormComponent } from './example/reactive-form/reactive-form.component';
 import { FormArrayComponent } from './example/form-array/form-array.component';
+import { ShortPipe } from './shared/pipe/short.pipe';
+import { FilterPipe } from './shared/pipe/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { FormArrayComponent } from './example/form-array/form-array.component';
     HttpClientComponent,
     TepmleteDrivenFormComponent,
     ReactiveFormComponent,
-    FormArrayComponent
+    FormArrayComponent,
+    ShortPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
