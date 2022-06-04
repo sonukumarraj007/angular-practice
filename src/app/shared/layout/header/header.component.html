@@ -1,7 +1,54 @@
-<nav class="nav">
-    <a routerLink="/home-page" routerLinkActive="active" class="nav-link">Home</a>
-    <a routerLink="/about-us-page" routerLinkActive="active" class="nav-link">About us</a>
-    <a routerLink="/portfolio-page" routerLinkActive="active" class="nav-link">Portfolio</a>
-    <a routerLink="/service-page" routerLinkActive="active" class="nav-link">Services</a>
-    <a routerLink="/contact-us-page" routerLinkActive="active" class="nav-link">Contact Us</a>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="/home-page" routerLinkActive="active" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/about-us-page" routerLinkActive="active" class="nav-link">About us</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/portfolio-page" routerLinkActive="active" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/services-page" routerLinkActive="active" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/contact-us-page" routerLinkActive="active" class="nav-link">Contact Us</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                Example
+            </a>
+
+            <div class="dropdown-menu">
+                <a routerLink="/data-binding" routerLinkActive="active" class="dropdown-item">Data Binding</a>
+
+                <a routerLink="/directive" routerLinkActive="active" class="dropdown-item">Directives</a>
+
+                <a routerLink="/event-binding" routerLinkActive="active" class="dropdown-item">Event Binding</a>
+
+                <a routerLink="/pipe" routerLinkActive="active" class="dropdown-item">Pipes</a>
+
+                <a routerLink="/custom-pipe" routerLinkActive="active" class="dropdown-item">Custom Pipes</a>
+
+                <a routerLink="/custom-directive" routerLinkActive="active" class="dropdown-item">Custom Directives</a>
+
+                <a routerLink="input-decorator" routerLinkActive="active" class="dropdown-item">Input Decorator</a>
+
+                <a routerLink="/output-decorator" routerLinkActive="active" class="dropdown-item">Output Decorator</a>
+
+                <a routerLink="/view-child" routerLinkActive="active" class="dropdown-item">View Child</a>
+
+                <a routerLink="/http-client" routerLinkActive="active" class="dropdown-item">HTTP Client</a>
+
+                <a routerLink="/templete-driven-form" routerLinkActive="active" class="dropdown-item">Templete Driven
+                    Form</a>
+
+                <a routerLink="/reactive-form" routerLinkActive="active" class="dropdown-item">Reactive Form</a>
+
+                <a routerLink="/form-array" routerLinkActive="active" class="dropdown-item">Form Array</a>
+            </div>
+        </li>
+    </ul>
 </nav>

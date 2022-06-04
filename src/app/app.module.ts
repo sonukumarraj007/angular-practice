@@ -11,6 +11,20 @@ import { AboutUsComponent } from './shared/page/about-us/about-us.component';
 import { ContactUsComponent } from './shared/page/contact-us/contact-us.component';
 import { ServiceComponent } from './shared/page/service/service.component';
 import { PorfolioComponent } from './shared/page/porfolio/porfolio.component';
+import { DataBindindComponent } from './example/data-bindind/data-bindind.component';
+import { DirectivesComponent } from './example/directives/directives.component';
+import { EventBindingComponent } from './example/event-binding/event-binding.component';
+import { PipeComponent } from './example/pipe/pipe.component';
+import { CustomPipeComponent } from './example/custom-pipe/custom-pipe.component';
+import { CustomDirectiveComponent } from './example/custom-directive/custom-directive.component';
+import { NgTempleteComponent } from './example/ng-templete/ng-templete.component';
+import { InputDecoratorComponent } from './example/input-decorator/input-decorator.component';
+import { OutputDecoratorComponent } from './example/output-decorator/output-decorator.component';
+import { ViewChildComponent } from './example/view-child/view-child.component';
+import { HttpClientComponent } from './example/http-client/http-client.component';
+import { TepmleteDrivenFormComponent } from './example/tepmlete-driven-form/tepmlete-driven-form.component';
+import { ReactiveFormComponent } from './example/reactive-form/reactive-form.component';
+import { FormArrayComponent } from './example/form-array/form-array.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +36,21 @@ import { PorfolioComponent } from './shared/page/porfolio/porfolio.component';
     AboutUsComponent,
     ContactUsComponent,
     ServiceComponent,
-    PorfolioComponent
+    PorfolioComponent,
+    DataBindindComponent,
+    DirectivesComponent,
+    EventBindingComponent,
+    PipeComponent,
+    CustomPipeComponent,
+    CustomDirectiveComponent,
+    NgTempleteComponent,
+    InputDecoratorComponent,
+    OutputDecoratorComponent,
+    ViewChildComponent,
+    HttpClientComponent,
+    TepmleteDrivenFormComponent,
+    ReactiveFormComponent,
+    FormArrayComponent
   ],
   imports: [
     BrowserModule,
