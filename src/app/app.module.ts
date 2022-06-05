@@ -28,6 +28,7 @@ import { FormArrayComponent } from './example/form-array/form-array.component';
 import { ShortPipe } from './shared/pipe/short.pipe';
 import { FilterPipe } from './shared/pipe/filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { HighlightDirective } from './shared/directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { FormsModule } from '@angular/forms';
     ReactiveFormComponent,
     FormArrayComponent,
     ShortPipe,
-    FilterPipe
+    FilterPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
