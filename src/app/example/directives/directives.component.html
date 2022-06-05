@@ -1,1 +1,62 @@
-<p>directives works!</p>
+<br>
+<h4>ngIf</h4>
+
+<input type="text" [(ngModel)]='inputPass'>
+
+<ng-container *ngIf="inputPass % 2 == 1 ;  then oddNumber; else evenNumber">
+</ng-container>
+
+<ng-template #oddNumber>
+    It's Odd Number!
+</ng-template>
+
+<ng-template #evenNumber>
+    It's Even Number!
+</ng-template>
+
+<br>
+<hr>
+<h3>ngSwitch</h3>
+
+<input type="text" [(ngModel)]='inputPass2'>
+
+<div [ngSwitch]="inputPass2">
+    <p *ngSwitchCase="inputPass2 === 0">
+        It's Zero!
+    </p>
+
+    <p *ngSwitchCase="inputPass2 % 2 === 1">
+        It's Odd Number!
+    </p>
+
+    <p *ngSwitchCase="inputPass2 % 2 === 0">
+        It's Even Number!
+    </p>
+</div>
+
+<br>
+<hr>
+
+<h3>ngFor</h3>
+
+<div *ngFor="let item of language_list">
+    <span>{{item}}</span>
+</div>
+
+<br>
+<hr>
+<h3>ngStyle</h3>
+
+<input type="text" [(ngModel)]='inputPass3'>
+<br><br>
+
+<div>
+    <p [ngStyle]="{backgroundColor: getColor(inputPass3)}">This is ngStyle sample code </p>
+</div>
+
+<hr>
+<h3>ngClass</h3>
+
+<p [ngClass]="{'pgreen': inputPass3 > 0, 'pred': inputPass3 < 0, 'pblack': inputPass3 == 0}">
+    Ng Class sample code
+</p>
