@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindindComponent implements OnInit {
 
+  age: number = 28;  
+  name: string = 'Sonu Kumar';  
+  userEntered : string = ''
+
   constructor() { }
 
   ngOnInit(): void {

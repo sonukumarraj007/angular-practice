@@ -1,1 +1,24 @@
-<p>data-bindind works!</p>
+<br>
+<h4>One-way databinding</h4>
+<p>String interpolation</p>
+<p>{{name}}</p>
+<p>{{age}}</p>
+
+<br>
+
+<p>Property Binding</p>
+<p [innerHtml]='name'></p>
+<p [innerHtml]='age'></p>
+
+
+<br>
+<hr>
+
+<h4>Two-way databinding</h4>
+
+<input type="text" [(ngModel)]="userEntered">
+<br>
+<br>
+
+<p>You Entered : </p>
+{{userEntered}}
