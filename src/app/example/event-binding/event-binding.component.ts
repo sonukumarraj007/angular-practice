@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent implements OnInit {
 
+  allow = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  userClick(){
+    alert('clicked!')
+    this.allow = true;
+  }
+  add(){
+    alert('added!')
   }
 
 }
